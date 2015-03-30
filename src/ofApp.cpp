@@ -2,9 +2,12 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	//orig size if 453 x 512
 	image.loadImage("riley.jpg");
 
-	image.resize(453 * 2, 512 * 2);
+	//image.resize(453 * 2, 512 * 2); //broken
+	//image.resize(454, 512); //broken
+	image.resize(454 * 2, 512 * 2); //works
 	//image.resize(1024, 1021);//works
 	//image.resize(1920, 1080); //works
 	if (true) {
